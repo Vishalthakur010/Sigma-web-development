@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        div{
+            background-color: red;
+        }
+        /* class selector */
+        .red{
+            background-color: green;
+        }
+        /* id selector */
+        #orange{
+            background-color: purple;
+        }
+        /* child selector */
+        div > p {
+            color: aqua;
+            background-color: chocolate;
+        }
+        /* descendent selector */
+        div p {
+            color: rgb(75, 75, 145);
+            background-color: rgb(180, 95, 123);
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: orange;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        i'm neo
+        <article>
+            <p>i'm just a paragraph inside div</p>
+        </article>
+    </div>
+
+    <div id="orange">
+        i'm another neo
+    </div>
+    <a href="https://www.google.com">open Google</a>
+    <a href="https://www.facebook.com">open Facebook</a>
+    <main class="one">
+        <p>this is first</p>
+        <p>this is second</p>
+    </main>
+</body>
+</html>
