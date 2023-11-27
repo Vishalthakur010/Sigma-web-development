@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css specificity</title>
     <style>
-        h1{
+        /* The specificity of element selector is 0 */
+        h1 {
             color: aqua;
         }
-        .xred{
-            color:orange!important;
+
+        /* The specificity of class selector is 10 */
+        .xred {
+            color: orange;
         }
-        .xyellow{
+
+        /* The specificity of class selector is 10 */
+        h1.xyellow {
             color: blue;
         }
-        .xpurple{
+
+        /* The specificity of class selector is 10 */
+        .xpurple {
             color: red;
         }
+
+        /* The specificity of attribute selector is 10 */
         [data-x=a] {
-        color: green;
+            color: green;
         }
+
+        /*The specificity of the selector is 
+        a= Element= 1
+        .harryclass= class= 10
+        .rohan= 10
+        href= attribute= 10
+        hover= pseudo selector= 10
+        total= 1+10+10+10+10= 41
+
+        a.harryclass.rohan-class[href]:hover {
+  color: red;
+}*/
     </style>
 </head>
+
 <body>
-    <h1 class="xred xyellow xpurple " data-x= "a">we are learning about css specificity</h1>
+    <h1 class="xred xyellow xpurple " data-x="a">we are learning about css specificity</h1>
 </body>
+
 </html>
