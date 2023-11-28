@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units:- px, rem, em, vh, vw, % and more</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+        }
+        .summer{
+            box-sizing: border-box;
+            border: 2px solid red;
+            /* width: 1080px; */
+            width: 60vw;
+            height: 15vh;
+            margin:10px auto;
+            background-color: yellow;
+            font-size: 3rem;
+        }
+        .winter{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 60vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 30px auto;
+            font-size: 15px;
+            background-color: yellow;
+        }
+        .winter div{
+            /* font-size: 2em; */
+            font-size: 2em;
+            width: 50%;
+            border: 3px solid grey;
+        }
+        .winter div p{
+            /* font-size: 2em; */
+            width: 50%;
+            border: 3px solid chocolate;
+        }
+        .automn{
+            box-sizing: border-box;
+            border: 3px solid blue;
+            width: 60vw;
+            height: 5vw;
+            margin: 40px auto;
+            background-color: rgb(104, 189, 104);
+            font-size: 2rem;
+             width: 60vmax; /*vmin = vh, vmax = vw ( for computer screen ) */
+        }
+    </style>
+</head>
+<body>
+    <div class="summer"> This is a div</div>
+    <div class="winter">
+        <div>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod praesentium maiores odit architecto soluta commodi quisquam, tempore quia ratione perspiciatis facere minus neque odio iure voluptatum. Dolore quis optio officia rerum? Pariatur corporis quasi iusto deleniti explicabo praesentium error consequuntur. Animi tempora expedita quae ipsam iusto? Totam dignissimos quo corrupti ullam at, aliquid doloribus. Voluptates, incidunt inventore?
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eos ducimus iusto vitae quia. Corrupti porro inventore nemo sint nobis ut ex eos!</p>
+        </div>
+            <!-- lorem999 -->
+        </div>
+        <div class="automn">
+            we'll test vmin and vmax here
+        </div>
+    
+</body>
+</html>
